@@ -1,0 +1,24 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+<p>Register for SplitNest!</p>
+<form method="post" th:action="@{/add}" th:object="${User}">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+
+    <label for="password">Password:</label><br>
+    <input type="text" id="password" name="password"><br>
+
+    <label for="password">First name:</label><br>
+    <input type="text" id="firstName" name="firstName"><br>
+
+    <label for="password">Last name:</label><br>
+    <input type="text" id="lastName" name="lastName"><br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
